@@ -26,23 +26,22 @@ h2{
     padding: 0px 15vw;
 }
 
-
-
-// Mouse cursor styling
-
-
-
-
-
 // Homepage
 
 
-.outlined:hover{
-    color: black;
-    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+.outlined-white:hover{
+    -webkit-text-fill-color: transparent; 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white; 
+}
+
+.outlined-black:hover{
+    -webkit-text-fill-color: transparent; 
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black; 
 }
+
+
 
 .passionate{
     display: flex;
@@ -67,4 +66,12 @@ h2{
 
 @keyframes rotateRight{
     100%{ transform:rotate(360deg); }
+}
+
+#image{
+    position:absolute;
+    z-index: -10;
+    display: none;
+    left: -50%;
+    top: -50%;
 }

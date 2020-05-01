@@ -28,10 +28,14 @@ h2 {
   padding: 0px 15vw;
 }
 
-.outlined:hover {
-  color: black;
+.outlined-white:hover {
   -webkit-text-fill-color: transparent;
-  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.outlined-black:hover {
+  -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
@@ -72,5 +76,13 @@ h2 {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+}
+
+#image {
+  position: absolute;
+  z-index: -10;
+  display: none;
+  left: -50%;
+  top: -50%;
 }
 /*# sourceMappingURL=main.css.map */
