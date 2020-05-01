@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  overflow: hidden;
+  border: black 15px solid;
 }
 
 h1 {
@@ -23,7 +25,6 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: black 15px solid;
   height: calc(100vh - 30px);
   padding: 0px 15vw;
 }
@@ -49,17 +50,17 @@ h2 {
 .view-my-projects {
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
-  -webkit-animation: 15s rotateRight infinite linear;
-          animation: 15s rotateRight infinite linear;
-  top: 364px;
-  right: 449px;
+  -webkit-animation: 25s rotateRight infinite linear;
+          animation: 25s rotateRight infinite linear;
+  top: 353px;
+  right: 439px;
   position: absolute;
   z-index: -1;
 }
 
 .arrow {
-  top: 364px;
-  right: 449px;
+  top: 353px;
+  right: 439px;
   position: absolute;
   z-index: -1;
 }
@@ -84,5 +85,6 @@ h2 {
   display: none;
   left: -50%;
   top: -50%;
+  opacity: 0.5;
 }
 /*# sourceMappingURL=main.css.map */

@@ -22,10 +22,19 @@ document.getElementById("designer").addEventListener("mouseout", imageHidden);
 
 function designerShow() {
     image.style.display = "block";
-    image.src = "../images/joyah-macbook.png";
+    image.src = "../images/futura-poster.png";
     
 }
 
+// Frontend cursor image
+document.getElementById("frontend").addEventListener("mouseover", frontendShow);
+document.getElementById("frontend").addEventListener("mouseout", imageHidden);
+
+function frontendShow() {
+    image.style.display = "block";
+    image.src = "../images/joyah-macbook.png";
+    
+}
 
 // Hide cursor image
 function imageHidden() {
