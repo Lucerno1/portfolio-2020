@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+
+}
+
+h1{
+    font-family: "Graphik";
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 6.5rem;
+    margin-top: 0px;
+}
+
+h2{
+    font-family: "Graphik";
+    font-weight: bold;
+    font-size: 2rem;
+
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    border: black 15px solid;
+    height: calc(100vh - 30px);
+    padding: 0px 15vw;
+}
+
+
+
+// Mouse cursor styling
+
+
+
+
+
+// Homepage
+
+
+.outlined:hover{
+    color: black;
+    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black; 
+}
+
+.passionate{
+    display: flex;
+}
+
+.view-my-projects{ 
+    transform-origin:50% 50%;
+    animation:15s rotateRight infinite linear; 
+    top: 364px;
+    right: 449px;
+    position: absolute;
+    z-index: -1;
+}
+
+.arrow{ 
+    top: 364px;
+    right: 449px;
+    position: absolute;
+    z-index: -1;
+}
+
+
+@keyframes rotateRight{
+    100%{ transform:rotate(360deg); }
+}
