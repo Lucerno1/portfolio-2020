@@ -33,8 +33,23 @@ document.getElementById("frontend").addEventListener("mouseout", imageHidden);
 function frontendShow() {
     image.style.display = "block";
     image.src = "../images/joyah-macbook.png";
-    
 }
+
+
+// View Projects cursor image
+document.getElementById("arrow").addEventListener("mouseover", outlinedArrow);
+document.getElementById("arrow").addEventListener("mouseout", filledArrow);
+
+function outlinedArrow() {
+    arrow.src = "../images/outlined-arrow.png";
+}
+
+function filledArrow() {
+    arrow.src = "../images/arrow.png";
+}
+
+
+
 
 // Hide cursor image
 function imageHidden() {

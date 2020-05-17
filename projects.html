@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slider.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+</head>
+
+<body>
+    <div class="main-carousel">
+        <div class="carousel-cell"><a href="www.google.com"><img src="images/futura-poster.png" alt=""></a></div>
+        <div class="carousel-cell">HEY</div>
+        <div class="carousel-cell">HALLO</div>
+
+    </div>
+
+
+    <!-- Flickity Library -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- Initialize Flickity -->
+    <script>
+        var elem = document.querySelector('.main-carousel');
+        var flkty = new Flickity(elem, {
+            // options
+            cellAlign: 'center',
+            contain: true,
+            wrapAround: true
+            
+        });
+    </script>
+</body>
+
+</html>

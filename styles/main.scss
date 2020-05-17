@@ -1,7 +1,7 @@
 body {
     margin: 0;
     overflow: hidden;
-    border: black 15px solid;
+    // border: black 15px solid;
 
 }
 
@@ -49,6 +49,9 @@ h2{
     display: flex;
 }
 
+
+// Rotating text
+
 .view-my-projects{ 
     transform-origin:50% 50%;
     animation:25s rotateRight infinite linear; 
@@ -59,12 +62,15 @@ h2{
 }
 
 
-.arrow{ 
+#arrow{ 
     top: 353px;
     right: 439px;
     position: absolute;
-    z-index: -1;
+    cursor: pointer;
 }
+
+
+
 
 
 @keyframes rotateRight{

@@ -16,10 +16,12 @@
 .arrow-bg{
     background: black; 
     width:50px; 
-    height: 50px; 
+    height: 52px; 
     position: absolute; 
     z-index: -1;
     align-self: flex-end;
+    right: -1px;
+    top: -1px;
 }
 
 
@@ -40,7 +42,7 @@
     position: absolute;
     content: "";
     top: 22px;
-    right: 11px;
+    right: 10px;
     width: 0;
     height: 0;
     border: 11px solid transparent;

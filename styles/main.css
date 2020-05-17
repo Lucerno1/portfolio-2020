@@ -1,7 +1,6 @@
 body {
   margin: 0;
   overflow: hidden;
-  border: black 15px solid;
 }
 
 h1 {
@@ -58,11 +57,11 @@ h2 {
   z-index: -1;
 }
 
-.arrow {
+#arrow {
   top: 353px;
   right: 439px;
   position: absolute;
-  z-index: -1;
+  cursor: pointer;
 }
 
 @-webkit-keyframes rotateRight {
