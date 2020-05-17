@@ -1,8 +1,37 @@
 .carousel-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100vw;
     height: 100vh;
     margin-right: 10px;
-    background: #8C8;
+    background: white;
     border-radius: 5px;
     counter-increment: carousel-cell;
+  }
+
+img{
+
+    height: inherit !important;
+  }
+
+  
+.static-banner {
+    position: absolute;
+    z-index: 1;
+    padding: 2px 20px;
+  
+    color: black;
+    pointer-events: none;
+  }
+  
+  .static-banner1 {
+    font-size: 26px;
+    left: 5vw;
+    top: 5vh;
+  }
+  
+  .static-banner2 {
+    right: 5vw;
+    bottom: 7vh;
   }

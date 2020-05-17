@@ -8,15 +8,22 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/slider.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet prefetch"
+    href="https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318449f1010323c84013d5af953/graphik.css">
 </head>
 
 <body>
-    <div class="main-carousel">
-        <div class="carousel-cell"><a href="www.google.com"><img src="images/futura-poster.png" alt=""></a></div>
-        <div class="carousel-cell">HEY</div>
-        <div class="carousel-cell">HALLO</div>
+    <div class="carousel">
+        <div class="static-banner static-banner1"><h2>Brm.</h2></div>
+        <div class="static-banner static-banner2">// 2020 </div>
 
+        <div class="main-carousel">
+            
+            <div class="carousel-cell"><img src="images/futura-poster.png" alt="Futura Poster"></div>
+            <div class="carousel-cell"><img src="images/joyah-macbook.png" alt="Futura Poster"></div>
+        </div>
     </div>
+    
 
 
     <!-- Flickity Library -->
@@ -29,10 +36,16 @@
             // options
             cellAlign: 'center',
             contain: true,
-            wrapAround: true
-            
+            wrapAround: true,
+            selectedAttraction: 0.01,
+            friction: 0.15,
+            pageDots: false,
+
+
         });
     </script>
+
+
 </body>
 
 </html>
