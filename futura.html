@@ -13,15 +13,28 @@
         href="https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318449f1010323c84013d5af953/graphik.css">
 </head>
 
-<body class="single-project">
+<body class="single-project-wrapper">
+
+    <!-- Scroll script -->
+    <script>
+        window.addEventListener('load', (event) => {
+            document.getElementById('scrollTo').scrollIntoView({block: 'start', behavior: 'smooth'});
+        });
+    </script>
+
+    <script>
+        
+    </script>
+
+
     <div class="carousel">
         <div class="main-carousel">
-
             <div class="carousel-cell"><img src="images/futura-poster.png" alt="Futura Poster"></div>
-
         </div>
     </div>
-    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero dolorem error consectetur blanditiis! Error,
+
+    <h1 id="scrollTo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero dolorem error consectetur
+        blanditiis! Error,
         ratione hic excepturi ab natus officia.</h1>
 
 
@@ -44,8 +57,6 @@
 
         });
     </script>
-
-
 </body>
 
 </html>

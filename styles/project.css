@@ -2,6 +2,8 @@ body {
   min-height: 200vh;
   margin: 0;
   font-family: "Graphik";
+  -webkit-transition: all 700ms ease;
+  transition: all 700ms ease;
 }
 
 .carousel-cell {
@@ -30,12 +32,12 @@ img {
   height: inherit !important;
 }
 
-.single-project {
+.single-project-wrapper {
   overflow-y: scroll;
   /* Add the ability to scroll */
 }
 
-.single-project::-webkit-scrollbar {
+.single-project-wrapper::-webkit-scrollbar {
   display: none;
 }
 /*# sourceMappingURL=project.css.map */
