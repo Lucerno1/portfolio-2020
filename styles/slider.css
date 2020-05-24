@@ -10,8 +10,7 @@
           justify-content: center;
   width: 100vw;
   height: 100vh;
-  margin-right: 10px;
-  background: white;
+  border-radius: 0;
   border-radius: 5px;
   counter-increment: carousel-cell;
 }
@@ -37,5 +36,23 @@ img {
   right: 5vw;
   bottom: 7vh;
   pointer-events: none;
+}
+
+.index-0 {
+  background-color: white;
+  -webkit-transition: background-color 2000ms ease;
+  transition: background-color 2000ms ease;
+}
+
+.index-1 {
+  background-color: #1CB3FD;
+  -webkit-transition: background-color 2000ms ease;
+  transition: background-color 2000ms ease;
+}
+
+.index-2 {
+  background-color: #1CB3FD;
+  -webkit-transition: background-color 2000ms ease;
+  transition: background-color 2000ms ease;
 }
 /*# sourceMappingURL=slider.css.map */

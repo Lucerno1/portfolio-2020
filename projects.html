@@ -7,47 +7,41 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/slider.css">
+
+    <!-- Flickity Stylesheet -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-- Font Graphik -->
     <link rel="stylesheet prefetch"
         href="https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318449f1010323c84013d5af953/graphik.css">
+
+    <!-- Jquery Library -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+
+
 </head>
 
 <body>
-    <div class="carousel">
-        <div class="static-banner static-banner1"><a href="index.html">
-                <h2>Brm.</h2>
-            </a></div>
-        <div class="static-banner static-banner2">// 2020 </div>
+    <div class="static-banner static-banner1"><a href="index.html"><h2>Brm.</h2></a></div>
+    <div class="static-banner static-banner2">// 2020 </div>
 
-        <div class="main-carousel">
+    <div class="main-carousel">
 
-            <a href="futura.html">
-                <div class="carousel-cell"><img src="images/futura-poster.png" alt="Futura Poster"></div>
-            </a>
-            <div class="carousel-cell"><img src="images/joyah-macbook.png" alt="Futura Poster"></div>
-        </div>
+        <a href="futura.html"><div class="carousel-cell"><img src="images/futura-poster.png" alt="Futura Poster"></div></a>
+
+        <a href="team-up.html"><div class="carousel-cell"><img src="images/Team-Up-Mockup.png" alt="Team Up Appdesign"></div></a>
+
+        <div class="carousel-cell"><img src="images/joyah-macbook.png" alt="Futura Poster"></div>
     </div>
-
 
 
     <!-- Flickity Library -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
-    <!-- Initialize Flickity -->
-    <script>
-        var elem = document.querySelector('.main-carousel');
-        var flkty = new Flickity(elem, {
-            // options
-            cellAlign: 'center',
-            contain: true,
-            wrapAround: true,
-            selectedAttraction: 0.01,
-            friction: 0.15,
-            pageDots: false,
+    <!-- Flickity Slider Script -->
+    <script src="/scripts/flickity.js"></script>
 
-
-        });
-    </script>
 
 
 </body>
