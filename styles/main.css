@@ -4,11 +4,21 @@ body {
   font-family: "Graphik";
 }
 
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
 h1 {
   font-family: "Graphik";
   font-weight: bold;
-  font-size: 6rem;
-  line-height: 6.5rem;
+  font-size: 5.5vw;
+  line-height: inherit;
   margin-top: 0px;
 }
 
@@ -53,14 +63,14 @@ h2 {
   -webkit-animation: 25s rotateRight infinite linear;
           animation: 25s rotateRight infinite linear;
   top: 353px;
-  right: 439px;
+  right: 400px;
   position: absolute;
   z-index: -1;
 }
 
 #arrow {
   top: 353px;
-  right: 439px;
+  right: 400px;
   position: absolute;
   cursor: pointer;
 }
@@ -86,5 +96,23 @@ h2 {
   left: -50%;
   top: -50%;
   opacity: 0.5;
+}
+
+.menu {
+  position: absolute;
+  right: 5vw;
+  top: 7vh;
+}
+
+.outlined-menu {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.outlined-menu:hover {
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 /*# sourceMappingURL=main.css.map */

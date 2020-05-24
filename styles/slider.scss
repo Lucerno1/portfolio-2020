@@ -22,16 +22,20 @@ img{
     padding: 2px 20px;
   
     color: black;
-    pointer-events: none;
+   
   }
   
+  // Logo Top-Left
   .static-banner1 {
     font-size: 26px;
     left: 5vw;
     top: 5vh;
   }
   
+  // Date Bottom-Right
   .static-banner2 {
     right: 5vw;
     bottom: 7vh;
+    pointer-events: none;
   }
+

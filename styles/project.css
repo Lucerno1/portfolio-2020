@@ -1,3 +1,9 @@
+body {
+  min-height: 200vh;
+  margin: 0;
+  font-family: "Graphik";
+}
+
 .carousel-cell {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,26 +22,20 @@
   counter-increment: carousel-cell;
 }
 
+.carousel-cell > img {
+  margin-right: 10px;
+}
+
 img {
   height: inherit !important;
 }
 
-.static-banner {
-  position: absolute;
-  z-index: 1;
-  padding: 2px 20px;
-  color: black;
+.single-project {
+  overflow-y: scroll;
+  /* Add the ability to scroll */
 }
 
-.static-banner1 {
-  font-size: 26px;
-  left: 5vw;
-  top: 5vh;
+.single-project::-webkit-scrollbar {
+  display: none;
 }
-
-.static-banner2 {
-  right: 5vw;
-  bottom: 7vh;
-  pointer-events: none;
-}
-/*# sourceMappingURL=slider.css.map */
+/*# sourceMappingURL=project.css.map */

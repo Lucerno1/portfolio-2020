@@ -1,4 +1,4 @@
-// bron: http://jsfiddle.net/BfLAh/1/ & Rens Nooren
+// bron: http://jsfiddle.net/BfLAh/1/
 
 $(document).mousemove(function (e) {
     var imageX = e.pageX - ($("#image").width() / 2);
