@@ -1,43 +1,217 @@
 body {
   min-height: 200vh;
-  margin: 0;
-  font-family: "Graphik";
   -webkit-transition: all 700ms ease;
   transition: all 700ms ease;
 }
 
-.carousel-cell {
+.disable-scroll-bar {
+  overflow-y: scroll;
+  /* Add the ability to scroll */
+}
+
+.disable-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.vertical-line-single {
+  position: absolute;
+  height: 8vh;
+  width: 1px;
+  border-right: solid 1px black;
+  bottom: -4vh;
+  right: 50vw;
+}
+
+.single-project-wrapper {
+  margin: 0 20vw 0 20vw;
+}
+
+.title-slogan {
+  margin: 150px 0 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.big-image {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  margin-right: 10px;
-  background: white;
-  border-radius: 5px;
-  counter-increment: carousel-cell;
 }
 
-.carousel-cell > img {
-  margin-right: 10px;
+.big-image img {
+  width: 100%;
 }
 
-img {
-  height: inherit !important;
+.challenge {
+  margin-top: 150px;
 }
 
-.single-project-wrapper {
-  overflow-y: scroll;
-  /* Add the ability to scroll */
+.concept {
+  margin-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 
-.single-project-wrapper::-webkit-scrollbar {
-  display: none;
+.concept div {
+  width: 50%;
+}
+
+.concept h4 {
+  margin-top: 40px;
+}
+
+.concept-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.concept-image img {
+  max-width: 60%;
+  height: auto;
+}
+
+.image-text {
+  margin-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.image-text div {
+  width: 50%;
+}
+
+.image-text img {
+  position: relative;
+  width: 50vw;
+  height: auto;
+}
+
+.image-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper-technologies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 200px;
+}
+
+.technologies {
+  margin-top: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.technologies div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.technologies div img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  max-width: 100%;
+  height: 30px;
+}
+
+.technologies div p {
+  margin-left: 15px;
+}
+
+.carousel-cell-2 {
+  margin-left: 50px;
+  height: auto;
+}
+
+.carousel-cell-2 img {
+  max-width: 60vw;
+}
+
+.main-carousel-2 {
+  margin-top: 100px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 150px;
+}
+
+.back-arrow:hover {
+  fill: #A0A0A0;
+  cursor: pointer;
 }
 /*# sourceMappingURL=project.css.map */

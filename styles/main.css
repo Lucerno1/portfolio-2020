@@ -28,6 +28,27 @@ h2 {
   font-size: 2rem;
 }
 
+h3 {
+  font-weight: bold;
+  font-size: 3vw;
+  line-height: 0;
+  margin-top: 0px;
+}
+
+h4 {
+  font-weight: 300;
+  line-height: 0.4;
+  font-size: 2vw;
+  margin-top: 0px;
+  color: #8d8d8d;
+}
+
+.body-text {
+  font-size: 1.5vw;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,9 +120,10 @@ h2 {
 }
 
 .menu {
-  position: absolute;
+  position: fixed;
   right: 5vw;
   top: 7vh;
+  z-index: 2;
 }
 
 .outlined-menu {
@@ -114,5 +136,19 @@ h2 {
   -webkit-text-fill-color: black;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+}
+
+.logo {
+  position: fixed;
+  left: 5vw;
+  top: 7vh;
+  z-index: 2;
+}
+
+.year {
+  position: absolute;
+  right: 5vw;
+  bottom: 7vh;
+  z-index: 2;
 }
 /*# sourceMappingURL=main.css.map */

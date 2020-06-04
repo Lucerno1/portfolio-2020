@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projects</title>
+    
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/slider.css">
 
@@ -12,9 +13,7 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <!-- Font Graphik -->
-    <link rel="stylesheet prefetch"
-        href="https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318449f1010323c84013d5af953/graphik.css">
-
+  
     <!-- Jquery Library -->
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 
@@ -23,17 +22,86 @@
 </head>
 
 <body>
-    <div class="static-banner static-banner1"><a href="index.html"><h2>Brm.</h2></a></div>
-    <div class="static-banner static-banner2">// 2020 </div>
+
+    <!-- Menu -->
+
+    <div class="logo">
+        <a href="index.html">
+            <h2>Brm.</h2>
+        </a>
+    </div>
+
+
+    <div class="menu outlined-menu">
+        <a href="">
+            <h2>menu</h2>
+        </a>
+    </div>
+
+
+    <!-- Slider -->
 
     <div class="main-carousel">
 
-        <a href="futura.html"><div class="carousel-cell"><img src="images/futura-poster.png" alt="Futura Poster"></div></a>
+         
+        <div class="carousel-cell" data-number="1" data-client="School" data-project="Font Poster" data-year="2019">
+                <a href="futura.html"><img src="images/futura-poster.png"></a>
+            </div>
+        </a>
 
-        <a href="team-up.html"><div class="carousel-cell"><img src="images/Team-Up-Mockup.png" alt="Team Up Appdesign"></div></a>
 
-        <div class="carousel-cell"><img src="images/joyah-macbook.png" alt="Futura Poster"></div>
+        <div class="carousel-cell" data-number="2" data-client="Team Up" data-project="Appdesign" data-year="2020">
+            <a href="team-up.html"><img src="images/Team-Up-Mockup-2.png"></a>
+        </div>
+
+        <div class="carousel-cell" data-number="3" data-client="Joyah" data-project="Branding" data-year="2019">
+            <a href="joyah.html"><img src="images/Joyah-Mockup-4.png"></a>
+        </div>
+
+        <div class="carousel-cell" data-number="3" data-client="Joyah" data-project="Branding" data-year="2019">
+            <a href="joyah.html"><img src="images/Joyah-Mockup-3.png"></a>
+        </div>
+
+        <div class="carousel-cell" data-number="3" data-client="Joyah" data-project="Branding" data-year="2019">
+            <a href="joyah.html"><img src="images/Joyah-Mockup-2.png"></a>
+        </div>
+
+        <div class="carousel-cell" data-number="3" data-client="Joyah" data-project="Branding" data-year="2019">
+            <a href="joyah.html"><img src="images/Joyah-Mockup-5.png"></a>
+        </div>
+
+        <div class="carousel-cell" data-number="3" data-client="Joyah" data-project="Branding" data-year="2019">
+            <a href="joyah.html"><img src="images/Joyah-Mockup.png"></a>
+        </div>
+
+        <div class="carousel-cell" data-number="4" data-client="Client" data-project="Project" data-year="2020">
+            <a href="joyah.html"><img src="images/test.gif"></a>
+        </div>
     </div>
+
+
+    <!-- Project Info & Navigation -->
+
+    <button class="previous-button">Prev</button>
+
+    <button class="next-button">Next</button>
+
+    <div class="project-info">
+        <p class="client">School</p>
+        <p class="project">Font Poster</p>
+    </div>
+
+    <p class="year"> 2019</p>
+
+    <div class="view-project">
+        <div>
+            <p class="number">1 </p>
+            <p>&nbsp;/ 4</p>
+        </div>
+        <p>View Project</p>
+    </div>
+
+    <div class="vertical-line"></div>
 
 
     <!-- Flickity Library -->
@@ -41,7 +109,6 @@
 
     <!-- Flickity Slider Script -->
     <script src="/scripts/flickity.js"></script>
-
 
 
 </body>
