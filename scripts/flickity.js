@@ -10,7 +10,7 @@ window.addEventListener('load', (event) => {
       pageDots: false,
       prevNextButtons: false,
   });
-});
+
 
 
 // Custom previous and next buttons
@@ -43,6 +43,7 @@ flkty.on('change', function (index) {
 
 // Project information
 // Set the info in the data attr
+
 var client = document.querySelector('.client');
 
 flkty.on( 'select', function() {
@@ -65,4 +66,5 @@ var number = document.querySelector('.number');
 
 flkty.on( 'select', function() {
   number.textContent = $( flkty.selectedElement ).attr('data-number');
+});
 });

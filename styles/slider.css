@@ -151,4 +151,8 @@ button:focus {
   display: -ms-flexbox;
   display: flex;
 }
+
+.no-pointer {
+  pointer-events: none;
+}
 /*# sourceMappingURL=slider.css.map */

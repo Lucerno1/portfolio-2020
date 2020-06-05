@@ -81,21 +81,29 @@ h4 {
   display: flex;
 }
 
+.passionate-text {
+  font-family: "Graphik";
+  font-weight: bold;
+  font-size: 2vw;
+}
+
 .view-my-projects {
   -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
   -webkit-animation: 25s rotateRight infinite linear;
-          animation: 25s rotateRight infinite linear;
-  top: 353px;
-  right: 400px;
-  position: absolute;
+  animation: 25s rotateRight infinite linear;
+  top: 38vh;
+  right: 20vw;
+  position: fixed;
   z-index: -1;
+  width: 15vw;
 }
 
 #arrow {
-  top: 353px;
-  right: 400px;
-  position: absolute;
+  top: 38vh;
+  right: 20vw;
+  width: 15vw;
+  position: fixed;
   cursor: pointer;
 }
 

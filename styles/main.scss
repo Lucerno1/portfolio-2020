@@ -76,25 +76,53 @@ h4 {
 
 .passionate {
     display: flex;
+
+}
+
+.passionate-text {
+    font-family: "Graphik";
+    font-weight: bold;
+    font-size: 2vw;
+
 }
 
 // Rotating text
 
-.view-my-projects {
-    transform-origin: 50% 50%;
-    animation: 25s rotateRight infinite linear;
-    top: 353px;
-    right: 400px;
-    position: absolute;
-    z-index: -1;
-}
+// .view-my-projects {
+//     transform-origin: 50% 50%;
+//     animation: 25s rotateRight infinite linear;
+//     top: 353px;
+//     right: 400px;
+//     position: absolute;
+//     z-index: -1;
+// }
 
-#arrow {
-    top: 353px;
-    right: 400px;
-    position: absolute;
+// #arrow {
+//     top: 353px;
+//     right: 400px;
+//     position: absolute;
+//     cursor: pointer;
+// }
+
+.view-my-projects {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-animation: 25s rotateRight infinite linear;
+            animation: 25s rotateRight infinite linear;
+    top: 38vh;
+    right: 20vw;
+    position: fixed;
+    z-index: -1;
+    width: 15vw;
+  }
+  
+  #arrow {
+    top: 38vh;
+    right: 20vw;
+    width: 15vw;
+    position: fixed;
     cursor: pointer;
-}
+  }
 
 @keyframes rotateRight {
     100% {
