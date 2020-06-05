@@ -32,7 +32,7 @@ document.getElementById("frontend").addEventListener("mouseout", imageHidden);
 
 function frontendShow() {
     image.style.display = "block";
-    image.src = "../images/joyah-macbook.png";
+    image.src = "../images/joyah/Joyah-Header.png";
 }
 
 
@@ -47,9 +47,6 @@ function outlinedArrow() {
 function filledArrow() {
     arrow.src = "../images/arrow.png";
 }
-
-
-
 
 // Hide cursor image
 function imageHidden() {

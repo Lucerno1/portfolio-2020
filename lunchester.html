@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunchester</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/slider.css">
+
+    <!-- Flickity Stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-- Graphik Font -->
+    <link rel="stylesheet prefetch"
+        href="https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318449f1010323c84013d5af953/graphik.css">
+
+<body class="disable-scroll-bar">
+
+    <body>
+
+        <!-- Menu -->
+
+        <div class="logo">
+            <a href="index.html">
+                <h2>Brm.</h2>
+            </a>
+        </div>
+
+
+        <div class="menu outlined-menu">
+            <a href="">
+                <h2>menu</h2>
+            </a>
+        </div>
+
+
+        <!-- Header -->
+
+        <div class="main-carousel">
+            <div class="carousel-cell">
+                <img src="images/Lunchester/Lunchester-header-2.png">
+            </div>
+        </div>
+
+
+        <!-- Project Info-->
+        <div class="project-info">
+            <p class="client">The Cre8ion.Lab</p>
+            <p class="project">Concepting & Appdesign</p>
+        </div>
+
+        <p class="year"> 2019</p>
+
+        <div class="vertical-line-single" id="scrollTo"></div>
+
+        <!-- Single Project Page -->
+        <div class="single-project-wrapper">
+
+            <div class="title-slogan">
+                <h3>Lunchester</h3>
+                <h4>The automated lunch system.</h4>
+            </div>
+
+            <div class="big-image" data-tilt data-tilt-max="5" data-tilt-perspective="1800" data-tilt-reset="false"
+                data-tilt-speed="2000" data-tilt-full-page-listening>
+                <img src="/images/Lunchester/Lunchester-All-Screens.png">
+            </div>
+
+            <div class="challenge">
+                <h4>Challenge</h4>
+                <p class="body-text">De lunches bij The Cre8ion.Lab zijn niet wat het moet zijn. Er wordt met regelmaat
+                    voedsel weggegooid, er is niet genoeg diversiteit en
+                    er wordt te veel tijd besteed aan het regelen van de lunch. Tijd voor verandering.</p>
+            </div>
+
+            <div class="concept">
+                <div class="concept-text">
+                    <h4>Concept</h4>
+                    <p class="body-text">Lunchester gaat er voor zorgen dat de lunch weer iets is om naar uit te kijken.
+                        Dit gaan we doen door een systeem te bouwen dat het inkopen van een variërende lunch
+                        automatiseerd en er met een oog opslag de voorraad bekeken kan worden.
+                    </p>
+                </div>
+
+                <div class="concept-image">
+                    <img class="lunchester-logo" src="/images/Lunchester/Lunchester-Logo.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main-carousel-2">
+            <div class="carousel-cell-2">
+                <img src="/images/Lunchester/Lunchester-Logo.jpg">
+            </div>
+            <div class="carousel-cell-2">
+                <img src="/images/Lunchester/Lunchester-Design-System.jpg">
+            </div>
+            <div class="carousel-cell-2">
+                <img src="/images/Lunchester/Lunchester-Typography.jpg">
+            </div>
+            <div class="carousel-cell-2">
+                <img src="/images/Lunchester/Lunchester-Succes-Metrics.jpg">
+            </div>
+
+        </div>
+
+        <div class="single-project-wrapper">
+            <div class="image-text">
+                <div class="image-flex-left">
+                    <video class="vid" width="80%" autoplay="" loop="true">
+                        <source src="/images/Lunchester/Lunchester Prototype Video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="text-right">
+                    <h4>Clickable Prototype</h4>
+                    <p class="body-text">
+                        Om de user experience van de applicatie te kunnen testen is er een clickable prototype gebruikt.
+                    </p>
+                </div>
+            </div>
+
+
+
+
+            <!-- Technologies -->
+            <div class="wrapper-technologies mt-150">
+                <h4>Gebruikte Technologieën</h4>
+                <div class="technologies">
+                    <div><img src="/images/technologies/figma.png">
+                        <p>Figma</p>
+                    </div>
+                    <div><img src="/images/technologies/illustrator.png">
+                        <p>Illustrator</p>
+                    </div>
+                    <div><img src="/images/technologies/github.png">
+                        <p>GitHub</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <a href="projects.html">
+                    <svg class="back-arrow" width="109" height="124" viewBox="0 0 109 124" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.2"
+                            d="M54.5 121.479L2.00334 62.1797L54.5 2.88013L63.9866 13.5961L29.9826 52.0066L27.7745 54.5008H31.1057L107.5 54.5008L107.5 69.8585L31.1057 69.8585H27.7745L29.9826 72.3528L63.9866 110.763L54.5 121.479Z"
+                            stroke="#A0A0A0" stroke-width="3" />
+                    </svg>
+                    <img class="back-to-projects" src="images/back-to-projects.png">
+                </a>
+
+
+
+
+            </div>
+        </div>
+
+        <!-- Scroll script -->
+        <script src="/scripts/scroll.js"></script>
+
+        <!-- Flickity Library -->
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+        <!-- Header Slider Script -->
+        <script src="/scripts/flickity.js"></script>
+
+        <!-- Image Slider -->
+        <script>
+            window.addEventListener('load', (event) => {
+                var elem = document.querySelector('.main-carousel-2');
+                var flkty = new Flickity(elem, {
+                    // options
+                    wrapAround: true,
+                    prevNextButtons: false,
+                });
+            });
+
+        </script>
+        <!-- Tilt Script -->
+        <script type="text/javascript" src="scripts/vanilla-tilt.min.js"></script>
+    </body>
+
+</html>

@@ -13,6 +13,10 @@
     <!-- Flickity Stylesheet -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
+    <!-- Graphik Font -->
+    <link rel="stylesheet prefetch"
+        href="https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318449f1010323c84013d5af953/graphik.css">
+
 <body class="disable-scroll-bar">
 
     <body>
@@ -36,8 +40,8 @@
         <!-- Header -->
 
         <div class="main-carousel">
-            <div class="carousel-cell" data-number="2" data-client="Team Up" data-project="Appdesign" data-year="2020">
-                <img src="images/Team-Up-Mockup-2.png">
+            <div class="carousel-cell">
+                <img src="images/team-up/Team-Up-Header.png">
             </div>
         </div>
 
@@ -45,7 +49,7 @@
         <!-- Project Info-->
         <div class="project-info">
             <p class="client">Team Up</p>
-            <p class="project">Appdesign</p>
+            <p class="project">Appdesign & Development</p>
         </div>
 
         <p class="year"> 2020</p>
@@ -60,8 +64,9 @@
                 <h4>Crossing a line together.</h4>
             </div>
 
-            <div class="big-image">
-                <img src="/images/team-up/team-up-visual.png" alt="">
+            <div class="big-image" data-tilt data-tilt-max="5" data-tilt-perspective="1800" data-tilt-reset="false"
+                data-tilt-speed="2000" data-tilt-full-page-listening>
+                <img src="/images/team-up/team-up-visual.png">
             </div>
 
             <div class="challenge">
@@ -72,17 +77,16 @@
             </div>
 
             <div class="concept">
-                <div>
+                <div class="concept-text">
                     <h4>Concept</h4>
                     <p class="body-text">Hardlopen in groepsverband werkt voor veel sporters als motiverende
-                        factor om hun doel te behalen. </p>
-                    <p class="body-text">
-                        Team Up is een platform dat mensen bij elkaar brengt om samen te gaan trainen voor een marathon.
+                        factor om hun doel te behalen. Team Up is een platform dat mensen bij elkaar brengt om samen te
+                        gaan trainen voor een marathon.
                     </p>
                 </div>
 
                 <div class="concept-image">
-                    <img src="/images/team-up/team-up-logo.png" alt="">
+                    <img class="team-up-logo" src="/images/team-up/team-up-logo.png" alt="">
                 </div>
             </div>
         </div>
@@ -103,13 +107,17 @@
         <div class="single-project-wrapper">
             <div class="image-text">
                 <div class="image-flex">
-                    <img src="/images/team-up/team-up-badges.png" alt="">
+                    <!-- <img src="/images/team-up/team-up-badges.png" alt=""> -->
+                    <video class="team-up-video" muted class="vid" width="80%" autoplay="" loop="true">
+                        <source src="/images/team-up/Final-team-up-video-999.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div class="text-right">
                     <h4>Micro Animaties</h4>
                     <p class="body-text">
-                        Team Up is gebaseerd op groepsprestaties om elkaar te blijven motiveren. Team Up bevat daarom
-                        ook een progressie overzicht met behaalde records & mijlpalen.
+                        Team Up is gebaseerd op groepsprestaties om elkaar te blijven motiveren. Aan de hand van het
+                        badge systeem is er een
+                        overzicht met behaalde records & mijlpalen.
                     </p>
                 </div>
             </div>
@@ -130,28 +138,30 @@
                         <p>Vue.js</p>
                     </div>
                     <div><img src="/images/technologies/github.png">
-                        <p>GithHub</p>
+                        <p>GitHub</p>
                     </div>
                 </div>
             </div>
 
             <div class="footer">
                 <a href="projects.html">
-                    <svg class="back-arrow" width="109" height="124" viewBox="0 0 109 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="back-arrow" width="109" height="124" viewBox="0 0 109 124" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path opacity="0.2"
                             d="M54.5 121.479L2.00334 62.1797L54.5 2.88013L63.9866 13.5961L29.9826 52.0066L27.7745 54.5008H31.1057L107.5 54.5008L107.5 69.8585L31.1057 69.8585H27.7745L29.9826 72.3528L63.9866 110.763L54.5 121.479Z"
                             stroke="#A0A0A0" stroke-width="3" />
                     </svg>
+                    <img class="back-to-projects" src="images/back-to-projects.png">
                 </a>
-                <a href="projects.html">
-                    <img class="view-my-projects" src="images/view-my-projects.png">
-                    <img id="arrow" src="images/arrow.png">
-                </a>
+
+
+
+
             </div>
         </div>
 
         <!-- Scroll script -->
-        <!-- <script src="/scripts/scroll.js"></script> -->
+        <script src="/scripts/scroll.js"></script>
 
         <!-- Flickity Library -->
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
@@ -161,16 +171,18 @@
 
         <!-- Image Slider -->
         <script>
-            var elem = document.querySelector('.main-carousel-2');
-            var flkty = new Flickity(elem, {
-                // options
-                wrapAround: true,
-                prevNextButtons: false,
+            window.addEventListener('load', (event) => {
+                var elem = document.querySelector('.main-carousel-2');
+                var flkty = new Flickity(elem, {
+                    // options
+                    wrapAround: true,
+                    prevNextButtons: false,
+                });
             });
 
         </script>
-
-
+        <!-- Tilt Script -->
+        <script type="text/javascript" src="scripts/vanilla-tilt.min.js"></script>
     </body>
 
 </html>

@@ -1,7 +1,10 @@
 body {
   margin: 0;
-  overflow: hidden;
   font-family: "Graphik";
+}
+
+.hide-scroll-bars {
+  overflow: hidden;
 }
 
 a:link {

@@ -4,7 +4,7 @@ window.addEventListener('load', (event) => {
 
         document.getElementById('scrollTo').scrollIntoView({block: 'start', behavior: 'smooth'});
       
-      }, 800); // How long do you want the delay to be
+      }, 300); // How long do you want the delay to be
     
     
 });

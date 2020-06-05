@@ -4,12 +4,12 @@ body {
 }
 
 
-.disable-scroll-bar {
-  overflow-y: scroll; /* Add the ability to scroll */
-}
-.disable-scroll-bar::-webkit-scrollbar {
-  display: none;
-}
+// .disable-scroll-bar {
+//   overflow-y: scroll; /* Add the ability to scroll */
+// }
+// .disable-scroll-bar::-webkit-scrollbar {
+//   display: none;
+// }
 
 .vertical-line-single {
   position: absolute;
@@ -52,25 +52,41 @@ body {
   display: flex;
   width: 100%;
 
-  div {
-    width: 50%;
-  }
-
-  h4 {
-    margin-top: 40px;
-  }
 }
 
+.concept-text {
+  width: 70%;
+}
+
+
 .concept-image{
+  width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  img {
-    max-width: 60%;
-    height: auto;
-  }
 }
+
+.team-up-logo {
+  max-width: 60%;
+  height: auto;
+}
+
+.local-buddy-logo {
+  max-width: 60%;
+  height: auto;
+}
+
+.lunchester-logo {
+  max-width: 60%;
+  min-width: 75%;
+  height: auto;
+}
+
+.who-i-am {
+  max-width: 100%;
+  height: auto;
+}
+
 
 .image-text{
   margin-top: 120px;
@@ -93,6 +109,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: -1;
+}
+
+.image-flex-joyah{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  position: relative;
+  left: -15.5vw;
 }
 
 
@@ -103,6 +129,14 @@ body {
   justify-content: center;
 }
 
+
+.team-up-video {
+  min-width: 50vw;
+ 
+
+}
+
+// Technologies
 
 .wrapper-technologies {
   display: flex;
@@ -133,6 +167,11 @@ body {
   }
 }
 
+.mt-150 {
+  margin-top: 150px;
+}
+
+// Slider
 .carousel-cell-2{
  
   margin-left: 50px;
@@ -147,6 +186,8 @@ body {
   margin-top: 100px;
 }
 
+
+// Footer
 .footer {
 display: flex;
 justify-content: center;
@@ -157,4 +198,19 @@ margin-bottom: 150px;
 .back-arrow:hover {
   fill: #A0A0A0;
   cursor: pointer;
+}
+
+.back-to-projects {
+  position: relative;
+  left: -50px;
+  transform-origin: 50% 50%;
+  animation: 25s rotateRight infinite linear;
+  z-index: -1;
+  
+}
+
+.back-arrow {
+  position: relative;
+  left: 150px;
+  bottom: 80px;
 }

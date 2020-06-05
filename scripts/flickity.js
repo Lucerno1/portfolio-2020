@@ -1,14 +1,15 @@
-
-var elem = document.querySelector('.main-carousel');
-var flkty = new Flickity(elem, {
-    // options
-    cellAlign: 'center',
-    contain: true,
-    wrapAround: true,
-    selectedAttraction: 0.01,
-    friction: 0.15,
-    pageDots: false,
-    prevNextButtons: false,
+window.addEventListener('load', (event) => {
+  var elem = document.querySelector('.main-carousel');
+  var flkty = new Flickity(elem, {
+      // options
+      cellAlign: 'center',
+      contain: true,
+      wrapAround: true,
+      selectedAttraction: 0.01,
+      friction: 0.15,
+      pageDots: false,
+      prevNextButtons: false,
+  });
 });
 
 

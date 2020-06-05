@@ -4,15 +4,6 @@ body {
   transition: all 700ms ease;
 }
 
-.disable-scroll-bar {
-  overflow-y: scroll;
-  /* Add the ability to scroll */
-}
-
-.disable-scroll-bar::-webkit-scrollbar {
-  display: none;
-}
-
 .vertical-line-single {
   position: absolute;
   height: 8vh;
@@ -66,15 +57,12 @@ body {
   width: 100%;
 }
 
-.concept div {
-  width: 50%;
-}
-
-.concept h4 {
-  margin-top: 40px;
+.concept-text {
+  width: 70%;
 }
 
 .concept-image {
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,8 +74,24 @@ body {
           align-items: center;
 }
 
-.concept-image img {
+.team-up-logo {
   max-width: 60%;
+  height: auto;
+}
+
+.local-buddy-logo {
+  max-width: 60%;
+  height: auto;
+}
+
+.lunchester-logo {
+  max-width: 60%;
+  min-width: 75%;
+  height: auto;
+}
+
+.who-i-am {
+  max-width: 100%;
   height: auto;
 }
 
@@ -119,6 +123,22 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: -1;
+}
+
+.image-flex-joyah {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: -1;
+  position: relative;
+  left: -15.5vw;
 }
 
 .text-right {
@@ -132,6 +152,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.team-up-video {
+  min-width: 50vw;
 }
 
 .wrapper-technologies {
@@ -184,6 +208,10 @@ body {
   margin-left: 15px;
 }
 
+.mt-150 {
+  margin-top: 150px;
+}
+
 .carousel-cell-2 {
   margin-left: 50px;
   height: auto;
@@ -213,5 +241,21 @@ body {
 .back-arrow:hover {
   fill: #A0A0A0;
   cursor: pointer;
+}
+
+.back-to-projects {
+  position: relative;
+  left: -50px;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-animation: 25s rotateRight infinite linear;
+          animation: 25s rotateRight infinite linear;
+  z-index: -1;
+}
+
+.back-arrow {
+  position: relative;
+  left: 150px;
+  bottom: 80px;
 }
 /*# sourceMappingURL=project.css.map */
