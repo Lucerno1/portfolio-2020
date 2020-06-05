@@ -29,6 +29,7 @@ h2 {
   font-family: "Graphik";
   font-weight: bold;
   font-size: 2rem;
+  margin: 0px;
 }
 
 h3 {
@@ -135,18 +136,118 @@ h4 {
   right: 5vw;
   top: 7vh;
   z-index: 2;
+  cursor: pointer;
 }
 
 .outlined-menu {
-  -webkit-text-fill-color: transparent;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.outlined-menu:hover {
+  color: black;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
 
-.outlined-menu:hover {
-  -webkit-text-fill-color: black;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+.outlined-menu-white {
+  color: #212121;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: white;
+  font-weight: 200;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.outlined-menu-white:hover {
+  color: white;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background: #212121;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.year-in-menu {
+  position: absolute;
+  font-size: 13pt;
+  right: 5vw;
+  bottom: 7vh;
+  z-index: 2;
+  margin: 0px;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav h2 {
+  font-size: 3.2vw;
+  margin: 5vh 0px;
+}
+
+nav ul {
+  padding: 0px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav a:visited {
+  color: #212121;
+}
+
+nav a:link {
+  color: #212121;
+}
+
+.border {
+  width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-top: solid 1px white;
+  border-bottom: solid 1px white;
+  margin-bottom: 30px;
+}
+
+.get-in-touch {
+  font-size: 18pt;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.377);
+  margin-bottom: 10px;
+}
+
+.email {
+  font-size: 18pt;
+  font-weight: normal;
+  margin: 0px;
+}
+
+.email:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
 }
 
 .logo {
@@ -154,6 +255,10 @@ h4 {
   left: 5vw;
   top: 7vh;
   z-index: 2;
+}
+
+.white {
+  color: white;
 }
 
 .year {
