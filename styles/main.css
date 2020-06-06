@@ -34,21 +34,21 @@ h2 {
 
 h3 {
   font-weight: bold;
-  font-size: 3vw;
-  line-height: 0;
+  font-size: 43pt;
+  line-height: inherit;
   margin-top: 0px;
 }
 
 h4 {
   font-weight: 300;
-  line-height: 0.4;
-  font-size: 2vw;
+  line-height: inherit;
+  font-size: 28pt;
   margin-top: 0px;
   color: #8d8d8d;
 }
 
 .body-text {
-  font-size: 1.5vw;
+  font-size: 20pt;
   font-weight: 300;
   line-height: 1.7;
 }
@@ -255,6 +255,15 @@ a {
   left: 5vw;
   top: 7vh;
   z-index: 2;
+}
+
+@media only screen and (max-width: 1024px) {
+  .logo {
+    position: absolute;
+  }
+  .menu {
+    position: absolute;
+  }
 }
 
 .white {

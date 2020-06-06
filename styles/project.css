@@ -1,7 +1,24 @@
 body {
-  min-height: 200vh;
   -webkit-transition: all 700ms ease;
   transition: all 700ms ease;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+.single-project-wrapper {
+  margin: 0 20vw 0 20vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .single-project-wrapper {
+    margin: 0 5vw 0 5vw;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .single-project-wrapper {
+    margin: 0 5vw 0 5vw;
+  }
 }
 
 .vertical-line-single {
@@ -35,10 +52,6 @@ body {
   max-height: 100vh;
 }
 
-.single-project-wrapper {
-  margin: 0 20vw 0 20vw;
-}
-
 .title-slogan {
   margin: 150px 0 30px 0;
   display: -webkit-box;
@@ -51,6 +64,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.title-slogan h4 {
+  text-align: center;
+}
+
+.title-slogan h3 {
+  text-align: center;
 }
 
 .big-image {
@@ -100,6 +121,28 @@ body {
           align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .concept-text {
+    width: 100%;
+  }
+  .concept-image {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .concept {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .team-up-logo {
+    max-width: 60%;
+    height: auto;
+    margin-bottom: 100px;
+  }
+}
+
 .team-up-logo {
   max-width: 60%;
   height: auto;
@@ -108,6 +151,12 @@ body {
 .local-buddy-logo {
   max-width: 60%;
   height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .local-buddy-logo {
+    margin-bottom: 100px;
+  }
 }
 
 .lunchester-logo {
@@ -119,6 +168,14 @@ body {
 .who-i-am {
   max-width: 100%;
   height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .who-i-am {
+    max-width: 70%;
+    margin-right: 50px;
+    margin-bottom: 70px;
+  }
 }
 
 .image-text {
@@ -137,6 +194,37 @@ body {
   position: relative;
   width: 50vw;
   height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .image-text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .image-text div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .image-text div .vid {
+    margin-top: 100px;
+  }
+  .image-text img {
+    width: 100%;
+  }
+  .image-text .album-cover {
+    left: -70px;
+  }
+  .image-text .team-up-video {
+    min-width: 100%;
+    margin-left: 100px;
+  }
 }
 
 .image-flex {
@@ -198,6 +286,10 @@ body {
   margin-bottom: 200px;
 }
 
+.wrapper-technologies h4 {
+  text-align: center;
+}
+
 .technologies {
   margin-top: 50px;
   width: 100%;
@@ -234,6 +326,34 @@ body {
   margin-left: 15px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .wrapper-technologies {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .technologies {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .technologies div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+  }
+  .technologies div p {
+    margin-left: 0px;
+  }
+}
+
 .mt-150 {
   margin-top: 150px;
 }
@@ -251,6 +371,18 @@ body {
   margin-top: 100px;
 }
 
+@media only screen and (max-width: 768px) {
+  .carousel-cell-2 img {
+    max-width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .carousel-cell-2 img {
+    max-width: 90vw;
+  }
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -265,7 +397,7 @@ body {
 }
 
 .back-arrow:hover {
-  fill: #A0A0A0;
+  fill: #a0a0a0;
   cursor: pointer;
 }
 
@@ -283,5 +415,19 @@ body {
   position: relative;
   left: 150px;
   bottom: 80px;
+}
+
+@media only screen and (max-width: 425px) {
+  .back-to-projects {
+    left: 50px;
+    bottom: 208px;
+  }
+  .back-arrow {
+    bottom: 0px;
+    left: 137px;
+  }
+  .footer {
+    margin-bottom: 0px;
+  }
 }
 /*# sourceMappingURL=project.css.map */
