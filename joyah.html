@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joyah</title>
-
+    <title>ʕ•ᴥ•ʔ &nbsp;  Bram Portfolio</title>
+    
+    <!-- Styling -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/project.css">
     <link rel="stylesheet" href="styles/slider.css">
@@ -25,20 +26,53 @@
     <body>
 
         <!-- Menu -->
+    <div class="logo">
+        <a href="index.html">
+            <h2>Brm.</h2>
+        </a>
+    </div>
 
+    <div class="button1 menu outlined-menu">
+        <h2>menu</h2>
+    </div>
+
+
+    <div class="overlay">
         <div class="logo">
             <a href="index.html">
-                <h2>Brm.</h2>
+                <h2 class="white">Brm.</h2>
             </a>
         </div>
-
-
-        <div class="menu outlined-menu">
-            <a href="">
-                <h2>menu</h2>
-            </a>
+        <div class="menu button2 outlined-menu-white">
+            <h2>close</h2>
         </div>
 
+        <p class="year-in-menu white">2020</p>
+
+        <div class="project-info">
+            <p class="get-in-touch">Get in touch</p>
+            <a href="mailto:B.vos@student.fontys.nl"><p class="white email">B.vos@student.fontys.nl</p></a>
+        </div>
+
+        <nav>
+            <ul>
+                <div class="border">
+                    <li><a class="outlined-menu-white" href="index.html">
+                            <h2>Home</h2>
+                        </a>
+                    </li>
+                    <li><a class="outlined-menu-white" href="projects.html">
+                            <h2>Projects</h2>
+                        </a>
+                    </li>
+                    <li><a class="outlined-menu-white" href="contact.html">
+                            <h2>Contact</h2>
+                        </a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </div>
 
         <!-- Header -->
 
@@ -159,6 +193,9 @@
             </div>
         </div>
 
+        <!-- Menu Script -->
+        <script src="/scripts/menu.js"></script>
+
         <!-- Scroll script -->
         <script src="/scripts/scroll.js"></script>
 
@@ -173,34 +210,18 @@
             window.addEventListener('load', (event) => {
                 var elem = document.querySelector('.main-carousel-2');
                 var flkty = new Flickity(elem, {
-                    // options
+                    // opties
                     wrapAround: true,
                     prevNextButtons: false,
                 });
             });
 
         </script>
+
         <!-- Tilt Script -->
         <script type="text/javascript" src="scripts/vanilla-tilt.min.js"></script>
 
-        <script>
-            $(window).scroll(function () {
-
-                // get the variable of how far we've scrolled from the top
-                var offset = $(window).scrollTop();
-                offset = offset * 0.10;
-
-                // add css transform with the offset variable
-                $('.rotate').css({
-                    '-moz-transform': 'rotate(' + offset + 'deg)',
-                    '-webkit-transform': 'rotate(' + offset + 'deg)',
-                    '-o-transform': 'rotate(' + offset + 'deg)',
-                    '-ms-transform': 'rotate(' + offset + 'deg)',
-                    'transform': 'rotate(' + offset + 'deg)',
-                });
-
-            });
-        </script>
+        
     </body>
 
 </html>

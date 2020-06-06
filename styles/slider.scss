@@ -104,6 +104,7 @@ button:focus {
   font-family: inherit;
 }
 
+
 .client {
   font-size: 25pt;
   font-weight: bold;
@@ -121,6 +122,15 @@ button:focus {
   right: 5vw;
   bottom: 7vh;
   pointer-events: none;
+}
+
+@media only screen and (max-width: 425px) {
+  .project-info {
+    display: none;
+  }
+  .year {
+    display: none;
+  }
 }
 
 .view-project {

@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Local Buddy</title>
+    <title>ʕ•ᴥ•ʔ &nbsp;  Bram Portfolio</title>
 
+    <!-- Styling -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/project.css">
     <link rel="stylesheet" href="styles/slider.css">
@@ -16,24 +17,63 @@
     <!-- Graphik Font -->
     <link rel="stylesheet prefetch"
         href="https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318449f1010323c84013d5af953/graphik.css">
+   
+    <!-- Jquery -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 <body class="disable-scroll-bar">
 
     <body>
 
         <!-- Menu -->
-
         <div class="logo">
             <a href="index.html">
                 <h2>Brm.</h2>
             </a>
         </div>
 
+        <div class="button1 menu outlined-menu">
+            <h2>menu</h2>
+        </div>
 
-        <div class="menu outlined-menu">
-            <a href="">
-                <h2>menu</h2>
-            </a>
+
+        <div class="overlay">
+            <div class="logo">
+                <a href="index.html">
+                    <h2 class="white">Brm.</h2>
+                </a>
+            </div>
+            <div class="menu button2 outlined-menu-white">
+                <h2>close</h2>
+            </div>
+
+            <p class="year-in-menu white">2020</p>
+
+            <div class="project-info">
+                <p class="get-in-touch">Get in touch</p>
+                <a href="mailto:B.vos@student.fontys.nl">
+                    <p class="white email">B.vos@student.fontys.nl</p>
+                </a>
+            </div>
+
+            <nav>
+                <ul>
+                    <div class="border">
+                        <li><a class="outlined-menu-white" href="index.html">
+                                <h2>Home</h2>
+                            </a>
+                        </li>
+                        <li><a class="outlined-menu-white" href="projects.html">
+                                <h2>Projects</h2>
+                            </a>
+                        </li>
+                        <li><a class="outlined-menu-white" href="contact.html">
+                                <h2>Contact</h2>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
         </div>
 
 
@@ -80,7 +120,7 @@
                 <div class="concept-text">
                     <h4>Concept</h4>
                     <p class="body-text">Local Buddy is een platform dat nieuwkomers en de lokale bevolking met elkaar
-                        verbind waardoor mensen makkelijker kunnen integreren. Bijvoorbeeld voor mensen die hulp nodig
+                        verbindt waardoor mensen makkelijker kunnen integreren. Bijvoorbeeld voor mensen die hulp nodig
                         hebben met bepaalde taken of gewoon graag een keer de hotspots in de stad willen ontdekken.
                     </p>
                 </div>
@@ -153,12 +193,10 @@
                     </svg>
                     <img class="back-to-projects" src="images/back-to-projects.png">
                 </a>
-
-
-
-
             </div>
         </div>
+
+       
 
         <!-- Scroll script -->
         <script src="/scripts/scroll.js"></script>
@@ -171,7 +209,7 @@
 
         <!-- Image Slider -->
         <script>
-           window.addEventListener('load', (event) => {
+            window.addEventListener('load', (event) => {
                 var elem = document.querySelector('.main-carousel-2');
                 var flkty = new Flickity(elem, {
                     // options
@@ -180,8 +218,12 @@
                 });
             });
         </script>
+
         <!-- Tilt Script -->
         <script type="text/javascript" src="scripts/vanilla-tilt.min.js"></script>
+
+         <!-- Menu Script -->
+         <script src="/scripts/menu.js"></script>
     </body>
 
 </html>

@@ -124,6 +124,15 @@ button:focus {
   pointer-events: none;
 }
 
+@media only screen and (max-width: 425px) {
+  .project-info {
+    display: none;
+  }
+  .year {
+    display: none;
+  }
+}
+
 .view-project {
   width: 100vw;
   display: -webkit-box;
