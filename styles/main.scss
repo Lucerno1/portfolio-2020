@@ -2,8 +2,18 @@ body {
   margin: 0;
   font-family: "Graphik";
   // border: black 15px solid;
-
 }
+
+// Fade in on page load
+.fade-on-page-load {
+  opacity: 0;
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s; /* Safari */
+}
+
+
+
+// Custom Scrollbar
 
 body::-webkit-scrollbar-track
 {
@@ -21,9 +31,6 @@ body::-webkit-scrollbar-thumb
 {
 	background-color: #1f1f1f;
 }
-
-
-
 
 .hide-scroll-bars {
   overflow: hidden;

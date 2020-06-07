@@ -16,6 +16,16 @@ function ikShow() {
     image.src = "../images/pf-bram.png";
 }
 
+// Stage cursor image
+document.getElementById("stage").addEventListener("mouseover", stageShow);
+document.getElementById("stage").addEventListener("mouseout", imageHidden);
+
+function stageShow() {
+    image.style.display = "block";
+    image.src = "../images/voetbaltafel-2.png";
+}
+
+
 // Designer cursor image
 document.getElementById("designer").addEventListener("mouseover", designerShow);
 document.getElementById("designer").addEventListener("mouseout", imageHidden);
@@ -23,6 +33,15 @@ document.getElementById("designer").addEventListener("mouseout", imageHidden);
 function designerShow() {
     image.style.display = "block";
     image.src = "../images/futura-poster.png";
+}
+
+// Developer cursor image
+document.getElementById("developer").addEventListener("mouseover", developerShow);
+document.getElementById("developer").addEventListener("mouseout", imageHidden);
+
+function developerShow() {
+    image.style.display = "block";
+    image.src = "../images/hackerman.gif";
     
 }
 

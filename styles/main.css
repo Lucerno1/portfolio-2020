@@ -3,6 +3,13 @@ body {
   font-family: "Graphik";
 }
 
+.fade-on-page-load {
+  opacity: 0;
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+  /* Safari */
+}
+
 body::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #F5F5F5;

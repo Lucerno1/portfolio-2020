@@ -4,20 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ʕ•ᴥ•ʔ &nbsp;  Bram Portfolio</title>
+    <title>ʕ•ᴥ•ʔ &nbsp; Bram Portfolio</title>
 
     <!-- Styling -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/dropdown.css">
     <link rel="stylesheet" href="styles/slider.css">
 
-    
+
     <!-- Flickity Stylesheet -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <!-- Font Graphik -->
-    <link rel="stylesheet prefetch" href="https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318449f1010323c84013d5af953/graphik.css">
-    
+    <link rel="stylesheet prefetch"
+        href="https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318449f1010323c84013d5af953/graphik.css">
+
     <!-- Jquery Library -->
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 </head>
@@ -50,7 +51,9 @@
 
         <div class="project-info">
             <p class="get-in-touch">Get in touch</p>
-            <a href="mailto:B.vos@student.fontys.nl"><p class="white email">B.vos@student.fontys.nl</p></a>
+            <a href="mailto:B.vos@student.fontys.nl">
+                <p class="white email">B.vos@student.fontys.nl</p>
+            </a>
         </div>
 
         <nav>
@@ -86,17 +89,21 @@
     <img id="image">
 
     <!-- Content -->
-    <div class="wrapper">
-        <p class="hover">HOVER  THE TEXT</p>
+    <div class="wrapper ">
+        <p class="hover fade-on-page-load">HOVER THE TEXT</p>
         <div data-tilt data-tilt-max="5" data-tilt-perspective="1800" data-tilt-reset="false" data-tilt-speed="2000"
             data-tilt-full-page-listening>
-            <h1>
-                <div><span class="outlined-white" id="ik">Ik</span> zoek naar een stage als</div>
+            <h1 class="fade-on-page-load">
+                <div><span class="outlined-white" id="ik">Ik</span> zoek naar een <span class="outlined-white"
+                        id="stage">stage</span> als</div>
                 <div>Digital <span class="outlined-black" id="designer"> Designer </span>&</div>
-                <div><span class="outlined-black" id="frontend">Frontend</span> Developer</div>
+                <div><span class="outlined-black" id="frontend">Frontend</span> <span class="outlined-white"
+                        id="developer">Developer</span></div>
             </h1>
         </div>
-        <a href="projects.html"><button class="btn"><p>View my projects</p></button></a>
+        <a href="projects.html"><button class="btn fade-on-page-load">
+                <p>View my projects</p>
+            </button></a>
     </div>
 
     <!-- Menu Script -->
@@ -110,6 +117,10 @@
 
     <!-- Tilt Script -->
     <script type="text/javascript" src="scripts/vanilla-tilt.min.js"></script>
+
+
+    <!-- Fade Script -->
+ <script src="scripts/fade.js"></script>
 </body>
 
 </html>
